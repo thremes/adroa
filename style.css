@@ -13,5 +13,4 @@
  * Template: picturesque
  */
 
-/* Importing the parent theme stylesheet. */
-@import url( '../picturesque/style.css' );
+@import "style.dev.css";
