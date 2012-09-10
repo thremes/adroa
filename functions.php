@@ -30,6 +30,22 @@ function adroa_theme_setup() {
 	/* Get the theme prefix ("picturesque"). */
 	$prefix = hybrid_get_prefix();
 
+    /* Load some required font styles */
+    add_action( 'wp_enqueue_scripts', 'adroa_load_font_styles' );
+}
+
+/**
+ * Load specific font stylesheets needed by the theme.
+ *
+ * @since 0.1.0
+ */
+function adroa_load_font_styles() {
+
+    wp_register_style( 'openSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic' );
+    wp_enqueue_style( 'openSans' );
+
+    wp_register_style( 'ptSerif', 'http://fonts.googleapis.com/css?family=PT+Serif' );
+    wp_enqueue_style( 'ptSerif' );
 }
 
 ?>

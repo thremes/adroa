@@ -14,3 +14,19 @@
  */
 
 @import "style.dev.css";
+
+/* Main */
+#main{
+    /*color:#454545;*/
+    background:#fff;
+    /*border:5px solid #151515;*/
+}
+
+/* Clearfix */
+.hentry .entry-header:before{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
