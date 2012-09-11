@@ -31,13 +31,13 @@ div.menu ul,nav.menu ul{margin:0;padding:0;list-style:none;line-height:1.0}div.m
     margin:37px auto;
 }
 #main{
-    width:950px;
+    width:980px;
     margin:0 auto;
-    padding:50px 50px 25px 50px;
+    /*padding:50px 50px 25px 50px;*/
 }
 #content{
     float:left;
-    width:600px;
+    width:640px;
 }
 .layout-1c #content{
     width:100%;
@@ -47,7 +47,7 @@ div.menu ul,nav.menu ul{margin:0;padding:0;list-style:none;line-height:1.0}div.m
 }
 #sidebar-primary{
     float:right;
-    width:275px; }
+    width:315px; }
 .layout-2c-r #sidebar-primary{
     float:left;
 }
@@ -63,15 +63,15 @@ body {
 a{
     color:#95B4BC;
     text-decoration:none;
-    -webkit-transition:color .1s ease-in;
-    -moz-transition:color .1s ease-in;
-    -o-transition:color .1s ease-in;
-    transition:color .1s ease-in;
+    -webkit-transition:color .2s ease-in;
+    -moz-transition:color .2s ease-in;
+    -o-transition:color .2s ease-in;
+    transition:color .2s ease-in;
 }
 a:hover{
-    color: #FFF;
-    background: #95B4BC;
-    /*text-decoration:underline;*/
+    color: #687E84;
+    /*background: #95B4BC;*/
+    text-decoration:underline;
 }
 
 /* Headers */
@@ -153,32 +153,36 @@ td{
 }
 
 /* Alignment */
-.alignleft{margin-right:25px; }
-.alignright{margin-left:25px; }
+.alignleft{
+    margin-right:25px;
+}
+.alignright{
+    margin-left:25px;
+}
 
 /* Images */
 /* Post images. */
-.hentry img{
-    max-width:590px;
-    height:auto;
-    padding:5px;
-    background:#444;
-    /*border:1px solid #444;*/
+.hentry img {
+    max-width: 580px;
+    height: auto;
+    padding: 9px;
+    background: #F4F8F8;
+    border: 1px solid #D5E1E4;
 }
-.layout-1c .hentry img{
-    max-width:940px;
+.layout-1c .hentry img {
+    max-width: 930px;
 }
-/*.hentry a:hover img{box-shadow:2px 2px 2px #858585; }*/
+.hentry a:hover img {
+    box-shadow: 2px 2px 2px #687E84;
+}
 
 /* Post thumbnails */
-.hentry .thumbnail{
-    float:left;
-    width: 600px;
-    max-width:600px;
-    max-height:227px;
-    /*margin:0 0 25px 25px;*/
-    padding: 0;
-    background-color: transparent;
+.hentry .thumbnail {
+    float: right;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 0 25px 25px;
+    /*background-color: transparent;*/
 }
 
 /* Avatars */
