@@ -415,21 +415,68 @@ td{
 /*}*/
 
 /* Gallery image count. */
-/*.format-gallery .image-count{font-style:italic; font-size:.9em; color:#757575; }*/
+.format-gallery .image-count{
+    font-family: "PT Serif", sans-serif;
+    font-style:italic;
+    font-size:.9em;
+    color:#777;
+}
 
 /* End posts */
 /* Image attachment pages */
-/*.attachment-image .entry-title{float:left; width:50%; }*/
-/*.attachment-image .byline{float:right; width:50%; text-align:right; }*/
-/*.attachment-image .byline .image-size-link,*/
-/*.attachment-image .byline .sep{margin-left:5px; }*/
-/*.attachment-meta{margin:0 0 25px; }*/
-/*.attachment-meta .image-info{float:left; width:350px; padding-right:50px; }*/
-/*.attachment-meta .image-gallery{float:right; width:550px; }*/
-/*.attachment-meta ul{list-style-position:inside; margin-left:0; font-size:13px; font-style:italic; color:#959595; }*/
-/*.attachment-meta li{padding-bottom:5px; margin-bottom:5px; border-bottom:1px dotted #e5e5e5; }*/
-/*.attachment-meta .image-data{float:right; text-align:right; }*/
-/*.attachment-meta .image-info .prep{font:normal normal bold 12px/25px Arial,sans-serif; text-transform:uppercase; color:#252525; }*/
+.attachment-image .entry-title{
+    float:left;
+    width:50%;
+}
+.attachment-image .byline{
+    float:right;
+    width:50%;
+    text-align:right;
+}
+.attachment-image .byline .image-size-link,
+.attachment-image .byline .sep{
+    margin-left:5px;
+}
+.attachment-meta{
+    background: #fff;
+    padding: 20px;
+    margin:0 0 25px;
+}
+.attachment-meta .image-info{
+    float:left;
+    width:340px;
+    padding-right:50px;
+}
+.attachment-meta .image-gallery{
+    float:right;
+    width:550px;
+}
+.attachment-meta ul{
+    list-style-position:inside;
+    list-style: none;
+    margin-left:0;
+    font-size:13px;
+    font-style:italic;
+    color:#777;
+}
+.attachment-meta li{
+    padding-bottom:5px;
+    margin-bottom:5px;
+    border-bottom:1px dotted #e5e5e5;
+}
+.attachment-meta .image-data{
+    float:right;
+    text-align:right;
+}
+.attachment-meta .image-info .prep{
+    /*font:normal normal bold 12px/25px "PT Serif",sans-serif;*/
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform:uppercase;
+    color:#252525;
+}
 
 /* Loop meta */
 /*.loop-meta{margin:0 0 25px; }*/
