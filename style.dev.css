@@ -316,7 +316,12 @@ td{
 }
 
 /* Header Image */
-/*.header-image{display:block; width:1050px; margin:0 auto 25px; border:5px solid #151515; }*/
+.header-image{
+    display:block;
+    width:960px;
+    margin:0 auto 25px;
+    border:10px solid #fff;
+}
 
 /* Main */
 /*#main{color:#454545; background:#fff; border:5px solid #151515; }*/
@@ -349,28 +354,65 @@ td{
 }
 
 /* Posts */
-/*.hentry{margin:0 0 25px; }*/
+.hentry{
+    background: #fff;
+    padding: 20px;
+    margin:0 0 20px;
+}
 
-/*.entry-content{clear:both; }*/
-/*.layout-1c .entry-content{font-size:17px; }*/
+.entry-content{
+    clear:both;
+}
+.layout-1c .entry-content{
+    font-size:17px;
+}
 
-/*.entry-summary p{margin:0 0 10px; }*/
+.entry-summary p{
+    margin:0 0 10px;
+}
 
 /* Post titles */
-/*.post .entry-title,*/
-/*.singular-post .post .entry-title{margin:0 0 10px; }*/
-/*.format-image .entry-title{margin:0 0 25px; }*/
-/*.entry-title a{color:#454545; }*/
+.post .entry-title,
+.singular-post .post .entry-title{
+    margin:0 0 10px;
+}
+.format-image .entry-title{
+    margin:0 0 25px;
+}
+.entry-title a{
+    color:#222;
+}
+.entry-title a:hover{
+    color: #fff;
+    background: #95B4BC;
+    text-decoration: none;
+}
 
 /* Post bylines and meta */
-/*.byline,*/
-/*.singular .byline,*/
-/*.entry-meta{margin:0 0 25px; font:normal normal normal 12px/25px Arial,sans-serif; color:#858585; }*/
-/*.byline{margin:0 0 10px; }*/
-/*.singular .entry-meta{clear:both; }*/
+.byline,
+.singular .byline,
+.entry-meta{
+    margin:0 0 25px;
+    font:normal normal normal 12px/25px 'Open Sans', Helvetica, Arial, sans-serif;
+    color:#777;
+}
+.byline{
+    margin:0 0 10px;
+}
+.singular .entry-meta{
+    clear:both;
+}
 
+.byline a:hover,
+.entry-meta a:hover {
+    color: #fff;
+    background: #95B4BC;
+    text-decoration: none;
+}
 /*.entry-meta .category,*/
-/*.entry-meta .post_tag{display:block; }*/
+/*.entry-meta .post_tag{*/
+    /*display:block;*/
+/*}*/
 
 /* Gallery image count. */
 /*.format-gallery .image-count{font-style:italic; font-size:.9em; color:#757575; }*/
