@@ -16,15 +16,15 @@
 
 get_header(); // Loads the header.php template. ?>
 
-	<?php do_atomic( 'before_content' ); // adroa_before_content ?>
+    <?php get_template_part( 'loop-meta' ); // Loads the loop-meta.php template. ?>
+
+    <?php do_atomic( 'before_content' ); // adroa_before_content ?>
 
 	<div id="content">
 
 		<?php do_atomic( 'open_content' ); // adroa_open_content ?>
 
 		<div class="hfeed">
-
-			<?php get_template_part( 'loop-meta' ); // Loads the loop-meta.php template. ?>
 
 			<?php if ( have_posts() ) : ?>
 
