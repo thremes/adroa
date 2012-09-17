@@ -574,17 +574,42 @@ a.page-numbers:hover {
 /*.comments-nav .next{font-style:italic; font-size:.9em; }*/
 
 /* Sidebar primary */
-/*#sidebar-primary{font-size:14px; color:#555; }*/
-/*#sidebar-primary .widget{margin:0 0 25px; }*/
+#sidebar-primary{
+    font-size:13px;
+    /*color:#555;*/
+}
+#sidebar-primary .widget{
+    background: #fff;
+    padding: 20px;
+    margin:0 0 20px;
+}
 /*#sidebar-primary .widget-title{}*/
-/*#sidebar-primary .widget ul{margin-left:25px; }*/
+#sidebar-primary .widget ul{
+    margin-left:25px;
+}
 
 /* End sidebar primary */
 /* Search widget */
-/*.widget-search{padding-bottom:25px !important; }*/
-/*.widget-search input[type="text"]{display:block; width:94%; padding:5px 3%; text-indent:5px; font:italic normal normal 14px/25px Georgia,Times,'Times New Roman',serif; color:#a5a5a5; background:#353535; border:none; }*/
-/*.widget-search input[type="text"]:focus{background:#252525; }*/
-/*.widget-search input[type="submit"], .widget-search label{display:none; }*/
+.widget-search{
+    padding-bottom:25px !important;
+}
+.widget-search input[type="text"]{
+    display:block;
+    width:94%;
+    padding:5px 3%;
+    text-indent:5px;
+    font:italic normal normal 13px/25px 'Open Sans', Helvetica, Arial, sans-serif;
+    color:#444;
+    background:#fff;
+    border:1px solid #DDD;
+}
+.widget-search input[type="text"]:focus{
+    /*background:#252525; */
+    border: 1px solid #AAA;
+}
+.widget-search input[type="submit"], .widget-search label{
+    display:none;
+}
 
 /* Comments */
 /*.comments-closed{font-style:italic; color:#757575; }*/
