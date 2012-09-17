@@ -612,32 +612,93 @@ a.page-numbers:hover {
 }
 
 /* Comments */
-/*.comments-closed{font-style:italic; color:#757575; }*/
+.comments-closed{
+    font-style:italic;
+    color:#777;
+}
 
-/*ol.comment-list,*/
-/*ol.comment-list ol.children{list-style:none; margin:0 0 50px; }*/
-/*ol.comment-list ol.children{padding:0; margin:0 -25px 0 0; }*/
-/*.comment-meta a,*/
-/*.comment-text a{color:#fff; }*/
+ol.comment-list,
+ol.comment-list ol.children{
+    list-style:none;
+    margin:0 0 50px;
+}
+ol.comment-list ol.children{
+    padding:0;
+    margin:0 -25px 0 0;
+}
+.comment-meta a,
+.comment-text a{
+    /*color:#fff; */
+}
+.comment-meta a:hover {
+    color: #fff;
+    background: #95B4BC;
+    text-decoration: none;
+}
 
-/*li.comment,*/
-/*li.pingback,*/
-/*li.trackback{margin:0 0 25px; padding:25px 25px 0 25px; color:#a5a5a5; background:#252525; }*/
+li.comment,
+li.pingback,
+li.trackback{
+    overflow: hidden;
+    margin: 0 0 25px 0;
+    padding: 20px 20px 0 20px;
+    /*margin:0 0 20px;*/
+    /*padding:25px 25px 0 25px;*/
+    /*padding: 20px;;*/
+    /*color:#a5a5a5;*/
+    /*background:#252525;*/
+    background: #fafafa;
+    background: -moz-linear-gradient(top, #fefefe 0%, #fafafa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#fafafa));
+    background: -webkit-linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    background: -o-linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    background: -ms-linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    background: linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    border: 1px solid #ddd;
+}
 
-/*li li.comment{background:#353535; }*/
-/*li li li.comment{background:#454545; }*/
-/*li li li li.comment{background:#555; }*/
-/*li li li li li.comment{background:#606060; }*/
-/*li li li li li li.comment{background:#656565; }*/
+li li.comment,
+li li li li.comment,
+li li li li li li.comment{
+    background:#fff;
+}
+li li li.comment,
+li li li li li.comment{
+    background: #fafafa;
+    background: -moz-linear-gradient(top, #fefefe 0%, #fafafa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#fafafa));
+    background: -webkit-linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    background: -o-linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    background: -ms-linear-gradient(top, #fefefe 0%,#fafafa 100%);
+    background: linear-gradient(top, #fefefe 0%,#fafafa 100%);
+}
 
-/*.comment-meta{margin:0 0 25px; font:normal normal normal 12px/25px Arial,sans-serif; }*/
+.comment-meta{
+    margin:0 0 25px;
+    /*font:normal normal normal 12px/25px Arial,sans-serif;*/
+    font-size: 12px;
+    line-height: 25px;
+}
 
-/*.comment-author{display:block; }*/
-/*.comment-author cite{font:normal normal normal 16px/25px 'Yanone Kaffeesatz',Arial,sans-serif; }*/
+.comment-author{
+    display:block;
+}
+.comment-author cite{
+    /*font:normal normal normal 16px/25px 'Yanone Kaffeesatz',Arial,sans-serif;*/
+    font-size: 16px;
+    line-height: 25px;
+}
 
-/*li.comment .avatar{float:left; width:40px; height:40px; margin:0 25px 0 0; padding:0; border:5px solid #151515; }*/
+li.comment .avatar{
+    float:left;
+    width:50px;
+    height:50px;
+    margin:0 25px 0 0;
+    padding:0;
+    border:none;
+}
 
-/*.comment-text{font-size:15px; }*/
+.comment-text{font-size:15px; }
 
 /* Comment form */
 /*#respond{margin:0 0 25px; }*/
