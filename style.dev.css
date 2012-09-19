@@ -767,22 +767,6 @@ li #respond textarea{
     background: #E9E9E9 linear-gradient(top, rgba(0,0,0,.1) 0%,rgba(255,255,255,.1) 100%);
 }
 
-
-.widget-search input[type="text"]{
-    display:block;
-    width:94%;
-    padding:5px 3%;
-    text-indent:5px;
-    font:italic normal normal 13px/25px 'Open Sans', Helvetica, Arial, sans-serif;
-    color:#444;
-    background:#fff;
-    border:1px solid #DDD;
-}
-.widget-search input[type="text"]:focus{
-    /*background:#252525; */
-    border: 1px solid #AAA;
-}
-
 /* Footer */
 #footer{
     /*width:950px;*/
