@@ -248,34 +248,88 @@ td{
 .attachment-image #content .gallery-caption{display:none; }
 
 /* Menus */
-/*#menu-primary,*/
-/*#menu-subsidiary{background:#151515; border-bottom:5px solid #222; }*/
-/*#menu-subsidiary{border-top:5px solid #222; border-bottom:none; }*/
-/*#menu-primary li,*/
-/*#menu-subsidiary li{margin:0; }*/
-/*#menu-primary a,*/
-/*#menu-subsidiary a{padding:15px 20px 14px 20px; font:normal normal bold 11px/11px Arial,sans-serif; text-transform:uppercase; }*/
-/*#menu-primary li a,*/
-/*#menu-primary li li a,*/
-/*#menu-primary li.sfHover li a,*/
-/*#menu-subsidiary li a{color:#959595; }*/
-/*#menu-primary li a:hover,*/
-/*#menu-primary li.sfHover a,*/
-/*#menu-primary li li a:hover,*/
-/*#menu-subsidiary li a:hover{color:#e5e5e5; background:#050505; }*/
-/*#menu-primary li.current-menu-item a,*/
-/*#menu-subsidiary li.current-menu-item a{background:#050505; }*/
+#menu-primary,
+#menu-subsidiary{
+    background: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fafafa));
+    background: -webkit-linear-gradient(top, #fff, #fafafa);
+    background: -moz-linear-gradient(top, #fff, #fafafa);
+    background: -o-linear-gradient(top, #fff, #fafafa);
+    background: -ms-linear-gradient(top, #fff, #fafafa);
+    background: linear-gradient(top, #fff, #fafafa);
+    border-bottom:5px solid #F3F3F3;
+}
+#menu-subsidiary{
+    border-top:5px solid #F3F3F3;
+    border-bottom:none;
+}
+#menu-primary li,
+#menu-subsidiary li{
+    margin:0;
+}
+#menu-primary a,
+#menu-subsidiary a{
+    padding:15px 20px 14px 20px;
+    font:normal normal normal 13px/11px "Open Sans", Helvetica, Arial, sans-serif;
+    /*text-transform:uppercase;*/
+}
+#menu-primary li a,
+#menu-primary li li a,
+#menu-primary li.sfHover li a,
+#menu-subsidiary li a{
+    color:#777;
+}
+#menu-primary li a:hover,
+#menu-primary li.sfHover a,
+#menu-primary li li a:hover,
+#menu-subsidiary li a:hover{
+    color:#000;
+    text-decoration: none;
+    background: #fafafa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fff));
+    background: -webkit-linear-gradient(top, #fafafa, #fff);
+    background: -moz-linear-gradient(top, #fafafa, #fff);
+    background: -o-linear-gradient(top, #fafafa, #fff);
+    background: -ms-linear-gradient(top, #fafafa, #fff);
+    background: linear-gradient(top, #fafafa, #fff);
+}
+#menu-primary li.current-menu-item a,
+#menu-subsidiary li.current-menu-item a{
+    background:#fafafa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fff));
+    background: -webkit-linear-gradient(top, #fafafa, #fff);
+    background: -moz-linear-gradient(top, #fafafa, #fff);
+    background: -o-linear-gradient(top, #fafafa, #fff);
+    background: -ms-linear-gradient(top, #fafafa, #fff);
+    background: linear-gradient(top, #fafafa, #fff);
+}
 
-/*#menu-primary ul ul{padding:0 0 15px; background:#050505; border-bottom-right-radius:5px; border-bottom-left-radius:5px; }*/
-/*#menu-primary li li a{margin:0 20px; padding:15px 10px; font-size:12px; font-weight:normal; text-transform:none; border-bottom:1px dotted #202020; }*/
+#menu-primary ul ul{
+    padding:0 0 15px;
+    background:#fff;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+#menu-primary li li a{
+    background: #fff !important; /* Sorry! I don't know why but this !important was necessary */
+    margin:0 20px;
+    padding:15px 10px;
+    /*font-size:13px;*/
+    font-weight:normal;
+    /*text-transform:none;*/
+    border-bottom:2px dotted #fff;
+}
+#menu-primary li li a:hover {
+    border-bottom:2px solid #95B4BC;
+}
 
 /* Drop-down styles */
-/*#menu-primary li:hover ul,*/
-/*#menu-primary li.sfHover ul{top:40px; }*/
-/*#menu-primary li:hover li ul,*/
-/*#menu-primary li.sfHover li ul{top:-999em; }*/
-/*#menu-primary li li:hover ul,*/
-/*#menu-primary li li.sfHover ul{top:0; }*/
+#menu-primary li:hover ul,
+#menu-primary li.sfHover ul{top:40px; }
+#menu-primary li:hover li ul,
+#menu-primary li.sfHover li ul{top:-999em; }
+#menu-primary li li:hover ul,
+#menu-primary li li.sfHover ul{top:0; }
 
 /* Drop-down indicator */
 /*#menu-primary li .sf-sub-indicator{position:absolute; top:19px; right:7px; width:5px; height:3px; text-indent:-9999em; background:url(../picturesque/images/menu-arrows.png) no-repeat 0 0; }*/
