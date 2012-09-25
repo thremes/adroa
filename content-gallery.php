@@ -49,7 +49,7 @@ do_atomic( 'before_entry' ); // adroa_before_entry ?>
 				wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'adroa' ), 'after' => '</p>' ) );
 			} ?>
 
-			<?php $count = picturesque_get_image_attachment_count(); ?>
+			<?php $count = adroa_get_image_attachment_count(); ?>
 			<p class="image-count"><?php printf( _n( 'This gallery contains %s image.', 'This gallery contains %s images.', $count, 'adroa' ), $count ); ?></p>
 
 		</div><!-- .entry-summary -->
