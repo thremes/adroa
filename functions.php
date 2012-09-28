@@ -97,7 +97,7 @@ function adroa_theme_setup() {
     add_filter( 'embed_defaults', 'adroa_embed_defaults' );
 
     /* Set content width. */
-    hybrid_set_content_width( 960 );
+    hybrid_set_content_width( 600 );
 
     /* Filter the sidebar widgets. */
     add_filter( 'sidebars_widgets', 'adroa_disable_sidebars' );
@@ -242,8 +242,8 @@ function adroa_embed_defaults( $args ) {
 
         $layout = theme_layouts_get_layout();
 
-        if ( 'layout-1c' != $layout )
-            $args['width'] = 600;
+        if ( 'layout-1c' == $layout )
+            $args['width'] = 940;
     }
 
     return $args;
