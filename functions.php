@@ -73,7 +73,7 @@ function adroa_theme_setup() {
     add_theme_support(
         'custom-background',
         array(
-            'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/bg.png',
+            'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/bg.jpg',
             'wp-head-callback' => 'adroa_custom_background_callback'
         )
     );
@@ -86,16 +86,18 @@ function adroa_theme_setup() {
             'admin-head-callback' => '__return_false',
             'header-text' => false,
             'default-image' => 'remove-header',
-            'width' => 1050,
-            'height' => 200
+            'width' => 960,
+            'height' => 210
         )
     );
+	/* Add featured-header support. */
+	require_once( trailingslashit( get_template_directory() ) . 'featured-header.php' );
 
     /* Embed width/height defaults. */
     add_filter( 'embed_defaults', 'adroa_embed_defaults' );
 
     /* Set content width. */
-    hybrid_set_content_width( 600 );
+    hybrid_set_content_width( 960 );
 
     /* Filter the sidebar widgets. */
     add_filter( 'sidebars_widgets', 'adroa_disable_sidebars' );
@@ -240,8 +242,8 @@ function adroa_embed_defaults( $args ) {
 
         $layout = theme_layouts_get_layout();
 
-        if ( 'layout-1c' == $layout )
-            $args['width'] = 950;
+        if ( 'layout-1c' != $layout )
+            $args['width'] = 600;
     }
 
     return $args;
