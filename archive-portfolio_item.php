@@ -15,7 +15,7 @@
  */
 
 /* Set up some default variables to use in the portfolio_item. */
-$portfolio_item_columns = apply_atomic( 'post_format_archive_portfolio_item_columns', 2 );
+$portfolio_item_columns = apply_atomic( 'archive_portfolio_item_columns', 2 );
 $portfolio_item_iterator = 0;
 
 get_header(); // Loads the header.php template. ?>

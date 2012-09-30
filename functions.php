@@ -116,6 +116,9 @@ function adroa_theme_setup() {
     /* Filters the image/gallery post format archive galleries. */
     add_filter( "{$prefix}_post_format_archive_gallery_columns", 'adroa_archive_gallery_columns' );
 
+    /* Filters the image/gallery post format archive galleries. */
+    add_filter( "{$prefix}_archive_portfolio_item_columns", 'adroa_archive_portfolio_item_columns' );
+
     /* Load some required font styles */
     add_action( 'wp_enqueue_scripts', 'adroa_load_font_styles' );
 }
@@ -138,6 +141,29 @@ function adroa_archive_gallery_columns( $columns ) {
 
         if ( 'layout-1c' == $layout )
             $columns = 5;
+    }
+
+    return $columns;
+}
+
+/**
+ * Sets the number of columns to show on portfolio archives pages based on the
+ * layout that is currently being used.
+ *
+ * @since 0.1.0
+ * @param int $columns Number of gallery columns to display.
+ * @return int $columns
+ */
+function adroa_archive_portfolio_item_columns( $columns ) {
+
+    /* Only run the code if the theme supports the 'theme-layouts' feature. */
+    if ( current_theme_supports( 'theme-layouts' ) ) {
+
+        /* Get the current theme layout. */
+        $layout = theme_layouts_get_layout();
+
+        if ( 'layout-1c' == $layout )
+            $columns = 3;
     }
 
     return $columns;
