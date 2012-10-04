@@ -154,3 +154,96 @@
     /*background: #95B4BC;*/
     /*text-decoration: none;*/
 /*}*/
+
+
+
+
+
+
+/* Loop meta */
+#menu-portfolio {
+    background: #fff;
+    opacity: 0.9;
+    padding: 20px 20px 0 20px;
+    margin:0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.loop-description{
+    /*font-size:15px;*/
+    /*font-style:italic;*/
+    /*color:#777;*/
+}
+.loop-description em{
+    /*font-style:normal;*/
+}
+
+
+
+
+
+ul#menu-portfolio-items {
+    display: block;
+    list-style: none;
+    margin: 0 0 17px;
+}
+
+ul#menu-portfolio-items li {
+    display: inline;
+    margin-right: 17px;
+}
+
+#portfolio-filters li.filter-name {
+    /*margin-right: 20px;*/
+}
+
+ul#menu-portfolio-items a {
+    font-size: 12px;
+    padding: 4px 15px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition: none;
+    -moz-transition:none;
+    -o-transition:none;
+    transition:none;
+    /*margin: 7px;*/
+    /*display: inline-block;*/
+    text-decoration: none;
+}
+
+ul#menu-portfolio-items li.current-cat a {
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);*/
+    /*-moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);*/
+    /*box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);*/
+}
+
+
+ul#menu-portfolio-items a {
+    color: #888;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#ddd));
+    background: -webkit-linear-gradient(top, #fff 0%,#ddd 100%);
+    background: -o-linear-gradient(top, #fff 0%,#ddd 100%);
+    background: -ms-linear-gradient(top, #fff 0%,#ddd 100%);
+    background: linear-gradient(top, #fff 0%,#ddd 100%);
+    border: 1px solid #ccc;
+}
+ul#menu-portfolio-items a:hover {
+    color: #111;
+}
+ul#menu-portfolio-items li.current-cat a {
+    color: #ddd;
+    background: #444;
+    background: -moz-linear-gradient(top, #666 0%, #444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666), color-stop(100%,#444));
+    background: -webkit-linear-gradient(top, #666 0%,#444 100%);
+    background: -o-linear-gradient(top, #666 0%,#444 100%);
+    background: -ms-linear-gradient(top, #666 0%,#444 100%);
+    background: linear-gradient(top, #666 0%,#444 100%);
+    border: 1px solid #333;
+}
+

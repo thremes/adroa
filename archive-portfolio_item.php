@@ -22,6 +22,8 @@ get_header(); // Loads the header.php template. ?>
 
 <?php get_template_part( 'loop-meta' ); // Loads the loop-meta.php template. ?>
 
+<?php get_template_part( 'menu', 'portfolio' ); // Loads the menu-portfolio.php template. ?>
+
 <?php do_atomic( 'before_content' ); // adroa_before_content ?>
 
 <div id="content">
