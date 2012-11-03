@@ -54,7 +54,6 @@ function adroa_theme_setup() {
     add_theme_support( 'hybrid-core-theme-settings', array( 'about', 'footer' ) );
     add_theme_support( 'hybrid-core-drop-downs' );
     add_theme_support( 'hybrid-core-template-hierarchy' );
-    //add_theme_support( 'hybrid-core-seo' );
 
     /* Add theme support for framework extensions. */
     add_theme_support( 'theme-layouts', array( '1c', '2c-l', '2c-r' ) );
