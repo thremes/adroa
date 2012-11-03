@@ -73,7 +73,7 @@ function adroa_theme_setup() {
     add_theme_support(
         'custom-background',
         array(
-            'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/noisy_grid.png',
+            'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/graphy.png',
             'wp-head-callback' => 'adroa_custom_background_callback'
         )
     );
