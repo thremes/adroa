@@ -21,7 +21,6 @@ do_atomic( 'before_entry' ); // adroa_before_entry ?>
 
 	<header class="entry-header">
 		<?php echo apply_atomic_shortcode( 'entry_title', the_title( '<h1 class="entry-title">', '</h1>', false ) ); ?>
-		<?php //echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-terms taxonomy="portfolio"] [entry-edit-link before=" | "]', 'adroa' ) . '</div>' ); ?>
 	</header><!-- .entry-header -->
 
     <?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Large', 'size' => 'large' ) ); ?>
