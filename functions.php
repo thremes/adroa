@@ -20,7 +20,7 @@
  *
  * @package Adroa
  * @subpackage Template
- * @version 0.1.1
+ * @version 0.1.2
  * @since 0.1.0
  * @author Thiago Senna <thiago@thremes.com.br>
  * @copyright Copyright (c) 2012, Thiago Senna
